@@ -261,8 +261,7 @@ iframe {
 
 .container {
     position: absolute;
-    top: 67%;
-    left: 12.7%;
+    margin-left: 139px;
     transform: translate(-50%,-50%);
 }
 
