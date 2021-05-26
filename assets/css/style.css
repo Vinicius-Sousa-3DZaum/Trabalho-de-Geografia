@@ -11,6 +11,7 @@
     --cor-p-2: #1576d6;
     --cor-ol: rgb(0, 0, 0);
     --cor-back: #1250A1;
+    --cor-amarelo: #d4b229;
 }
 
 html {
@@ -22,9 +23,8 @@ body div {
 }
 
 h1 {
-    color: #464646;
-    font-family: Arial, Helvetica, sans-serif; 
-    background-color: var(--h1-background);
+    color: #000000;
+    background-color: var(--cor-amarelo);
     border-radius: 0.5rem;
     text-align: center;
 }
@@ -38,7 +38,7 @@ h1 {
 }
 
 body header div {
-    gap: 20px;
+    gap: 25px;
 }
 
 body header div h3 a {
@@ -66,17 +66,26 @@ h2 {
     border-radius: 0.5rem;
 }
 
+body header div section h2 {
+    margin-left: 125px;
+    width: 210px;
+}
+
+body header div section h3 {
+    text-align: center;
+}
+
 ul {
     padding-left: 2rem;
     list-style-type: disc;
     font-size: 1.2rem;
-    background-color: var(--cor-p-2);
+    background-color: var(--cor-amarelo);
     border-radius: 0.5rem;
 }
 
 p {
     color: var(--cor-p);
-    background-color: var(--cor-p-2);
+    background-color: var(--cor-amarelo);
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
@@ -135,7 +144,7 @@ body nav ul {
 }
 
 body header div section {
-    border: 7px solid var(--cor-de-borda-primaria);
+    border: 7px double var(--cor-amarelo);
 }
 
 body header div section h2 {
@@ -182,7 +191,7 @@ body main div {
 }
 
 body article {
-    border: 7px solid var(--cor-de-borda-primaria);
+    border: 7px inset rgb(56, 56, 56);
 }
 
 body article div {
@@ -243,7 +252,7 @@ body header div section h2 {
 }
 
 ul {
-    color:var(--h1-background)
+    color: #000;
 }
 
 /* Extras */
@@ -254,30 +263,33 @@ input {
 }
 
 iframe {
-    border: 7px solid #fff;
-    box-shadow: #272727 0 0 10px 10px;
+    border: 7px double var(--cor-amarelo);
+    filter: drop-shadow(0 0 45px #272727);
     padding: 0rem;
 }
 
 .container {
     position: absolute;
-    margin-left: 139px;
+    margin-left: 234px;
     transform: translate(-50%,-50%);
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 0rem;
 }
 
 .container a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 280px;
+    width: 309px;
     height: 30px;
     text-decoration: none;
     color: #fff;
-    background: var(--cor-p-2);
+    background-color: var(--cor-back);
     font-size: 1.5rem;
     letter-spacing: 2px;
     overflow: hidden;
-    border-radius: 2px;
+    border-radius: 20px;
 }
 
 span {
@@ -285,12 +297,12 @@ span {
     transition: .3s ease;
 }
 
-span::before{
+span::before {
     content: attr(data);
     position: absolute;
     transform: translateY(40px);
 }
 
-.container:hover span{
+.container:hover span {
     transform: translateY(-40px)
 }
